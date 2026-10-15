@@ -3,417 +3,169 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Hobby by Siam | Aquarium & Fish Store</title>
 <meta name="description" content="Hobby by Siam — শৌখিন মাছ, ফিশ ফুড, মাছের ওষুধ ও অ্যাকুরিয়াম সামগ্রী।">
 
 <style>
 :root {
-  --bg: #061827;
-  --panel: #0d2c40;
-  --panel2: #123b50;
-  --teal: #2be0ca;
-  --text: #f4fbff;
-  --muted: #bdd0db;
+  --bg:#061827; --panel:#0d2c40; --panel2:#123b50;
+  --teal:#2be0ca; --text:#f4fbff; --muted:#bdd0db;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
 body {
-  margin: 0;
-  background: linear-gradient(145deg, #061827, #0b3444 70%, #063b3d);
-  color: var(--text);
-  font-family: Arial, "Noto Sans Bengali", sans-serif;
+  margin:0;
+  background:linear-gradient(145deg,#061827,#0b3444 70%,#063b3d);
+  color:var(--text);
+  font-family:Arial,"Noto Sans Bengali",sans-serif;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.wrap {
-  width: min(1100px, calc(100% - 32px));
-  margin: auto;
-}
-
+a { color:inherit; text-decoration:none; }
+.wrap { width:min(1100px,calc(100% - 32px)); margin:auto; }
 header {
-  position: sticky;
-  top: 0;
-  z-index: 5;
-  background: #061827ed;
-  border-bottom: 1px solid #ffffff18;
+  position:sticky; top:0; z-index:5;
+  background:#061827ed; border-bottom:1px solid #ffffff18;
 }
-
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  padding: 14px 0;
+  display:flex; justify-content:space-between; align-items:center;
+  gap:15px; padding:14px 0;
 }
-
-.logo {
-  font-weight: 900;
-  font-size: 1.2rem;
-  white-space: nowrap;
-}
-
-.logo span {
-  color: var(--teal);
-}
-
-.links {
-  display: flex;
-  gap: 16px;
-  color: var(--muted);
-  font-size: .9rem;
-}
-
+.logo { font-weight:900; font-size:1.2rem; white-space:nowrap; }
+.logo span { color:var(--teal); }
+.links { display:flex; gap:14px; color:var(--muted); font-size:.88rem; }
 .btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 11px 15px;
-  border-radius: 10px;
-  background: var(--teal);
-  color: #05232b;
-  font-weight: 800;
-  border: 0;
-  cursor: pointer;
-  text-align: center;
+  display:inline-flex; justify-content:center; align-items:center;
+  padding:11px 15px; border-radius:10px;
+  background:var(--teal); color:#05232b; font-weight:800;
+  border:0; cursor:pointer; text-align:center;
 }
-
-.btn.ghost {
-  background: transparent;
-  color: var(--text);
-  border: 1px solid #ffffff4a;
-}
-
+.btn.ghost { background:transparent; color:var(--text); border:1px solid #ffffff4a; }
 .hero {
-  display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  gap: 30px;
-  align-items: center;
-  padding: 55px 0 40px;
+  display:grid; grid-template-columns:1.1fr .9fr; gap:30px;
+  align-items:center; padding:55px 0 40px;
 }
-
-.eyebrow {
-  color: var(--teal);
-  letter-spacing: 2px;
-  font-size: .82rem;
-  font-weight: 800;
-}
-
-.hero h1 {
-  font-size: clamp(2.5rem, 6vw, 4.4rem);
-  line-height: 1.08;
-  margin: 14px 0;
-}
-
-.hero h1 span {
-  color: var(--teal);
-}
-
-.hero p {
-  color: var(--muted);
-  line-height: 1.8;
-  font-size: 1.05rem;
-}
-
+.eyebrow { color:var(--teal); letter-spacing:2px; font-size:.82rem; font-weight:800; }
+.hero h1 { font-size:clamp(2.5rem,6vw,4.4rem); line-height:1.08; margin:14px 0; }
+.hero h1 span { color:var(--teal); }
+.hero p { color:var(--muted); line-height:1.8; font-size:1.05rem; }
 .art {
-  min-height: 270px;
-  border: 1px solid #8affed26;
-  border-radius: 28px;
-  background: radial-gradient(circle at 50% 40%, #2be0ca38, transparent 40%), linear-gradient(135deg, #11465b, #071c2d);
-  display: grid;
-  place-items: center;
-  font-size: 9rem;
+  min-height:270px; border:1px solid #8affed26; border-radius:28px;
+  background:radial-gradient(circle at 50% 40%,#2be0ca38,transparent 40%),linear-gradient(135deg,#11465b,#071c2d);
+  display:grid; place-items:center; font-size:9rem;
 }
-
-section {
-  padding: 28px 0 42px;
-}
-
-.head {
-  margin-bottom: 20px;
-}
-
-.head h2 {
-  font-size: 1.9rem;
-  margin: 0 0 8px;
-}
-
-.head p,
-.small {
-  color: var(--muted);
-  line-height: 1.7;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-}
-
+section { padding:28px 0 42px; scroll-margin-top:75px; }
+.head { margin-bottom:20px; }
+.head h2 { font-size:1.9rem; margin:0 0 8px; }
+.head p,.small { color:var(--muted); line-height:1.7; }
+.grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
 .card {
-  background: linear-gradient(145deg, var(--panel2), var(--panel));
-  border: 1px solid #ffffff20;
-  border-radius: 18px;
-  padding: 18px;
-  min-width: 0;
+  background:linear-gradient(145deg,var(--panel2),var(--panel));
+  border:1px solid #ffffff20; border-radius:18px; padding:18px; min-width:0;
 }
-
-.card h3 {
-  margin: 10px 0;
-}
-
-.card p {
-  line-height: 1.6;
-}
-
-.ico {
-  font-size: 2.2rem;
-}
-
+.card h3 { margin:10px 0; }
+.card p { line-height:1.6; }
+.ico { font-size:2.2rem; }
 .products {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-  align-items: stretch;
+  display:grid; grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px; align-items:stretch;
 }
-
-.product {
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
+.product { padding:0; overflow:hidden; display:flex; flex-direction:column; }
 .product .pic {
-  width: 100%;
-  height: 210px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: radial-gradient(circle, #2be0ca28, transparent 65%), #09263a;
+  width:100%; height:210px; padding:10px; display:flex;
+  align-items:center; justify-content:center;
+  background:radial-gradient(circle,#2be0ca28,transparent 65%),#09263a;
 }
-
-.product .pic img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
+.product .pic img { display:block; width:100%; height:100%; object-fit:contain; }
 .product .info {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1;
+  padding:16px; display:flex; flex-direction:column;
+  align-items:flex-start; flex:1;
 }
-
-.product .info h3 {
-  margin: 0 0 8px;
-  font-size: 1.15rem;
-}
-
-.product .info p {
-  margin: 5px 0;
-}
-
-.price {
-  color: #aaffed;
-  font-weight: 800;
-  margin: 10px 0;
-}
-
-.small {
-  font-size: .88rem;
-}
-
-.product .btn {
-  margin-top: auto;
-}
-
-.offer {
-  color: #7dffae;
-  font-weight: bold;
-}
-
-.limited {
-  color: #ffb4b4;
-  font-weight: bold;
-}
-
-.twocol {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
+.product .info h3 { margin:0 0 8px; font-size:1.15rem; }
+.product .info p { margin:5px 0; }
+.price { color:#aaffed; font-weight:800; margin:10px 0; }
+.small { font-size:.88rem; }
+.product .btn { margin-top:auto; width:100%; }
+.offer { color:#7dffae; font-weight:bold; }
+.limited { color:#ffb4b4; font-weight:bold; }
+.twocol { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
 .policy {
-  background: #0c2b3f;
-  border: 1px solid #ffffff18;
-  border-radius: 18px;
-  padding: 20px;
+  background:#0c2b3f; border:1px solid #ffffff18;
+  border-radius:18px; padding:20px;
 }
+.policy li { margin:9px 0; color:var(--muted); line-height:1.65; }
 
-.policy li {
-  margin: 9px 0;
-  color: var(--muted);
-  line-height: 1.65;
+/* Video gallery */
+.video-list {
+  display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px;
 }
-
-footer {
-  border-top: 1px solid #ffffff18;
-  padding: 22px 0;
-  color: var(--muted);
-  font-size: .9rem;
+.video-card {
+  background:linear-gradient(145deg,var(--panel2),var(--panel));
+  border:1px solid #ffffff20; border-radius:18px; padding:14px; min-width:0;
 }
-
-.foot {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
+.video-card h3 { margin:0 0 12px; }
+.video-frame {
+  width:100%; aspect-ratio:16/9; border-radius:12px;
+  overflow:hidden; background:#020d16;
 }
+.video-frame iframe { width:100%; height:100%; border:0; }
+.video-card .btn { margin-top:12px; width:100%; }
+.video-note { color:var(--muted); font-size:.88rem; line-height:1.6; }
+.video-error { padding:18px; color:var(--muted); line-height:1.7; }
 
-.social {
-  text-align: center;
-  padding: 25px;
-  background: #102733;
+footer { border-top:1px solid #ffffff18; padding:22px 0; color:var(--muted); font-size:.9rem; }
+.foot { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.social { text-align:center; padding:25px; background:#102733; }
+.social a { display:inline-block; color:white; padding:12px 18px; margin:6px; border-radius:8px; }
+.youtube { background:#e62117; }
+.tiktok { background:#000; }
+.facebook { background:#1877f2; }
+
+@media(max-width:760px) {
+  .links { display:none; }
+  .hero { grid-template-columns:1fr; padding-top:35px; }
+  .art { min-height:210px; font-size:7rem; }
+  .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .products { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+  .product .pic { height:170px; }
+  .product .info { padding:12px; }
+  .product .info h3 { font-size:1rem; }
+  .product .btn { padding:10px 7px; font-size:.9rem; }
+  .twocol { grid-template-columns:1fr; }
 }
-
-.social a {
-  display: inline-block;
-  color: white;
-  padding: 12px 18px;
-  margin: 6px;
-  border-radius: 8px;
-}
-
-.youtube {
-  background: #e62117;
-}
-
-.tiktok {
-  background: #000;
-}
-
-@media (max-width: 760px) {
-  .links {
-    display: none;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-    padding-top: 35px;
-  }
-
-  .art {
-    min-height: 210px;
-    font-size: 7rem;
-  }
-
-  .grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .products {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 10px;
-  }
-
-  .product .pic {
-    height: 170px;
-  }
-
-  .product .info {
-    padding: 12px;
-  }
-
-  .product .info h3 {
-    font-size: 1rem;
-  }
-
-  .product .btn {
-    width: 100%;
-    padding: 10px 7px;
-    font-size: .9rem;
-  }
-
-  .twocol {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 420px) {
-  .products {
-    grid-template-columns: 1fr;
-  }
-
-  .product .pic {
-    height: 220px;
-  }
-
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .nav > .btn {
-    font-size: .85rem;
-    padding: 10px;
-  }
+@media(max-width:420px) {
+  .products,.video-list { grid-template-columns:1fr; }
+  .product .pic { height:220px; }
+  .hero h1 { font-size:2.5rem; }
+  .nav > .btn { font-size:.82rem; padding:10px; }
 }
 </style>
 </head>
 
 <body>
-
 <header>
   <div class="wrap nav">
     <a class="logo" href="#"><span>HOBBY</span> by Siam 🐠</a>
-
     <nav class="links">
       <a href="#categories">ক্যাটাগরি</a>
       <a href="#products">পণ্য</a>
+      <a href="#videos">ভিডিও</a>
       <a href="#delivery">ডেলিভারি</a>
       <a href="#contact">যোগাযোগ</a>
     </nav>
-
-    <a class="btn" href="https://wa.me/8801580978353" target="_blank" rel="noopener">
-      WhatsApp অর্ডার
-    </a>
+    <a class="btn" href="https://wa.me/8801580978353" target="_blank" rel="noopener">WhatsApp অর্ডার</a>
   </div>
 </header>
 
 <main>
-
 <div class="wrap hero">
   <div>
     <div class="eyebrow">YOUR AQUARIUM HOBBY PARTNER</div>
     <h1>অ্যাকুরিয়ামের সবকিছু,<br><span>এক জায়গায়।</span></h1>
-
-    <p>
-      শৌখিন মাছ, ফিশ ফুড, মাছের ওষুধ, অ্যাকুরিয়াম,
-      ফিল্টার, এয়ার পাম্প ও প্রয়োজনীয় সরঞ্জাম।
-      পণ্যের দাম ও স্টক জানতে WhatsApp-এ যোগাযোগ করুন।
-    </p>
-
+    <p>শৌখিন মাছ, ফিশ ফুড, মাছের ওষুধ, অ্যাকুরিয়াম, ফিল্টার, এয়ার পাম্প ও প্রয়োজনীয় সরঞ্জাম। পণ্যের দাম ও স্টক জানতে WhatsApp-এ যোগাযোগ করুন।</p>
     <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px">
       <a class="btn" href="#products">পণ্য দেখুন</a>
       <a class="btn ghost" href="https://www.facebook.com/share/1JxdD2keqw/" target="_blank" rel="noopener">Facebook Page</a>
     </div>
   </div>
-
   <div class="art" aria-label="Fish illustration">🐠</div>
 </div>
 
@@ -423,205 +175,140 @@ footer {
       <h2>আমাদের ক্যাটাগরি</h2>
       <p>অ্যাকুরিয়াম শখের প্রয়োজনীয় পণ্য বেছে নিন</p>
     </div>
-
     <div class="grid">
-      <div class="card">
-        <div class="ico">🐟</div>
-        <h3>শৌখিন মাছ</h3>
-        <p>গাপ্পি, মলি ও অন্যান্য রঙিন মাছ।</p>
-      </div>
-
-      <div class="card">
-        <div class="ico">🫙</div>
-        <h3>ফিশ ফুড</h3>
-        <p>মাছের দৈনন্দিন খাবার ও পুষ্টির পণ্য।</p>
-      </div>
-
-      <div class="card">
-        <div class="ico">🧪</div>
-        <h3>মাছের ওষুধ</h3>
-        <p>মাছের যত্নের পণ্য ও সামগ্রী।</p>
-      </div>
-
-      <div class="card">
-        <div class="ico">🫧</div>
-        <h3>অ্যাকুরিয়াম ও সরঞ্জাম</h3>
-        <p>ট্যাংক, ফিল্টার, এয়ার পাম্প ও এক্সেসরিজ।</p>
-      </div>
+      <div class="card"><div class="ico">🐟</div><h3>শৌখিন মাছ</h3><p>গাপ্পি, মলি ও অন্যান্য রঙিন মাছ।</p></div>
+      <div class="card"><div class="ico">🫙</div><h3>ফিশ ফুড</h3><p>মাছের দৈনন্দিন খাবার ও পুষ্টির পণ্য।</p></div>
+      <div class="card"><div class="ico">🧪</div><h3>মাছের ওষুধ</h3><p>মাছের যত্নের পণ্য ও সামগ্রী।</p></div>
+      <div class="card"><div class="ico">🫧</div><h3>অ্যাকুরিয়াম ও সরঞ্জাম</h3><p>ট্যাংক, ফিল্টার, এয়ার পাম্প ও এক্সেসরিজ।</p></div>
     </div>
   </div>
 </section>
 
 <section id="products">
-  <div class="wrap">
-    <div class="head">
-      <h2>পণ্য ও অর্ডার</h2>
-      <p>পণ্যের দাম, স্টক ও ডেলিভারি চার্জ জানতে WhatsApp করুন।</p>
+<div class="wrap">
+  <div class="head"><h2>পণ্য ও অর্ডার</h2><p>পণ্যের দাম, স্টক ও ডেলিভারি চার্জ জানতে WhatsApp করুন।</p></div>
+  <div class="products">
+
+    <div class="card product">
+      <div class="pic"><img src="file_0000000040108211b1a9f93fc2752f20.png" alt="Blue Panda Guppy"></div>
+      <div class="info">
+        <h3>Blue Panda Guppy</h3><p class="small">শৌখিন অ্যাকুরিয়াম মাছ</p>
+        <div class="price">দাম: ৳২০০ প্রতি জোড়া</div>
+        <p class="offer">🎁 ২ জোড়া নিলে ১ জোড়া ফ্রি!</p>
+        <a class="btn" href="https://wa.me/8801580978353?text=Blue%20Panda%20Guppy%20এর%20দাম%20জানতে%20চাই" target="_blank" rel="noopener">দাম / অর্ডার</a>
+      </div>
     </div>
 
-    <div class="products">
-
-      <!-- Blue Panda Guppy -->
-      <div class="card product">
-        <div class="pic">
-          <img src="file_0000000040108211b1a9f93fc2752f20.png" alt="Blue Panda Guppy">
-        </div>
-        <div class="info">
-          <h3>Blue Panda Guppy</h3>
-          <p class="small">শৌখিন অ্যাকুরিয়াম মাছ</p>
-          <div class="price">দাম: ৳২০০ প্রতি জোড়া</div>
-
-<p style="color:#2be0ca; font-weight:bold;">
-  🎁 ২ জোড়া নিলে ১ জোড়া ফ্রি!
-</p>
-          <a class="btn" href="https://wa.me/8801580978353?text=Blue%20Panda%20Guppy%20এর%20দাম%20জানতে%20চাই" target="_blank" rel="noopener">দাম / অর্ডার</a>
-        </div>
+    <div class="card product">
+      <div class="pic"><img src="file_00000000d4bc82118bbff7428d974bd0.png" alt="Santa Claus Guppy"></div>
+      <div class="info">
+        <h3>Santa Claus Guppy</h3><p>দাম: ৳২০০ প্রতি জোড়া</p>
+        <p class="offer">🎁 ২ জোড়া নিলে ১ জোড়া ফ্রি!</p>
+        <p class="limited">⏳ অফার সীমিত সময়ের জন্য</p>
+        <a class="btn" href="https://wa.me/8801580978353?text=Santa%20Claus%20Guppy%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার করুন</a>
       </div>
+    </div>
 
-      <!-- Santa Claus Guppy -->
-      <div class="card product">
-        <div class="pic">
-          <img src="file_00000000d4bc82118bbff7428d974bd0.png" alt="Santa Claus Guppy">
-        </div>
-        <div class="info">
-          <h3>Santa Claus Guppy</h3>
-          <p>দাম: ৳২০০ প্রতি জোড়া</p>
-          <p class="offer">🎁 ২ জোড়া নিলে ১ জোড়া ফ্রি!</p>
-          <p class="limited">⏳ অফার সীমিত সময়ের জন্য</p>
-          <a class="btn" href="https://wa.me/8801580978353?text=Santa%20Claus%20Guppy%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার করুন</a>
-        </div>
+    <div class="card product">
+      <div class="pic"><img src="file_0000000038808211be221a30c02a2a4e.png" alt="Electric Blue Guppy"></div>
+      <div class="info">
+        <h3>Electric Blue Guppy</h3><p>দাম: ৳১৮০</p>
+        <p class="offer">🎁 ২ জোড়া নিলে ১ জোড়া ফ্রি!</p>
+        <a class="btn" href="https://wa.me/8801580978353?text=Electric%20Blue%20Guppy%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার করুন</a>
       </div>
+    </div>
 
-      <!-- Electric Blue Guppy -->
-      <div class="card product">
-        <div class="pic">
-          <img src="file_0000000038808211be221a30c02a2a4e.png" alt="Electric Blue Guppy">
-        </div>
-        <div class="info">
-          <h3>Electric Blue Guppy</h3>
-          <p>দাম: ৳১৮০</p>
-          <p class="offer">🎁 ২ জোড়া নিলে ১ জোড়া ফ্রি!</p>
-          <a class="btn" href="https://wa.me/8801580978353?text=Electric%20Blue%20Guppy%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার করুন</a>
-        </div>
+    <div class="card product">
+      <div class="pic"><img src="file_00000000dc908211bdcbbd69ce0d39a6.png" alt="Quality Gold Fish Food"></div>
+      <div class="info">
+        <h3>Quality Gold Fish Food</h3><p>পরিমাণ: ২০ গ্রাম</p>
+        <div class="price">দাম: ৳২০</div>
+        <a class="btn" href="https://wa.me/8801580978353?text=Quality%20Gold%20Fish%20Food%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার করুন</a>
       </div>
+    </div>
 
-      <!-- Gold Fish Food -->
-      <div class="card product">
-        <div class="pic">
-          <img src="file_00000000dc908211bdcbbd69ce0d39a6.png" alt="Quality Gold Fish Food">
-        </div>
-        <div class="info">
-          <h3>Quality Gold Fish Food</h3>
-          <p>পরিমাণ: ২০ গ্রাম</p>
-          <div class="price">দাম: ৳২০</div>
-          <a class="btn" href="https://wa.me/8801580978353?text=Quality%20Gold%20Fish%20Food%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার করুন</a>
-        </div>
+    <div class="card product">
+      <div class="pic"><img src="file_00000000c6e47208af522d031a224ba4.png" alt="Methylene Blue Liquid"></div>
+      <div class="info">
+        <h3>METHYLENE BLUE</h3><p>পরিমাণ: ১০০ মিলি</p>
+        <div class="price">দাম: ৳১০০</div>
+        <a class="btn" href="https://wa.me/8801580978353?text=Methylene%20Blue%20100%20ml%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার করুন</a>
       </div>
+    </div>
 
-      <!-- Liquid Methylene Blue -->
-      <div class="card product">
-        <div class="pic">
-          <img src="file_00000000c6e47208af522d031a224ba4.png" alt="Methylene Blue Liquid">
-        </div>
-        <div class="info">
-          <h3>METHYLENE BLUE</h3>
-          <p>পরিমাণ: ১০০ মিলি</p>
-          <div class="price">দাম: ৳১০০</div>
-          <a class="btn" href="https://wa.me/8801580978353?text=Methylene%20Blue%20100%20ml%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার করুন</a>
-        </div>
+    <div class="card product">
+      <div class="pic"><img src="file_00000000958c7206bb2166d4261d90e9.png" alt="মিথিলিন ব্লু পাউডার"></div>
+      <div class="info">
+        <h3>মিথিলিন ব্লু পাউডার</h3><p>৫০ গ্রাম — ৳২৫০</p><p>১০০ গ্রাম — ৳৪৫০</p>
+        <a class="btn" href="https://wa.me/8801580978353?text=মিথিলিন%20ব্লু%20পাউডার%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার করুন</a>
       </div>
+    </div>
 
-      <!-- Methylene Blue Powder -->
-      <div class="card product">
-        <div class="pic">
-          <img src="file_00000000958c7206bb2166d4261d90e9.png" alt="মিথিলিন ব্লু পাউডার">
-        </div>
-        <div class="info">
-          <h3>মিথিলিন ব্লু পাউডার</h3>
-          <p>৫০ গ্রাম — ৳২৫০</p>
-          <p>১০০ গ্রাম — ৳৪৫০</p>
-          <a class="btn" href="https://wa.me/8801580978353?text=মিথিলিন%20ব্লু%20পাউডার%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার করুন</a>
-        </div>
+    <div class="card product">
+      <div class="pic"><img src="Picsart_26-10-13_11-34-44-299.png" alt="Aquarium Tank"></div>
+      <div class="info">
+        <h3>অ্যাকুরিয়াম ট্যাংক</h3><p>সাইজ: 9 × 6 × 9</p>
+        <div class="price">দাম: ৳৪৫০</div>
+        <p class="offer">🎁 সাথে এক জোড়া মাছ ফ্রি!</p>
+        <a class="btn" href="https://wa.me/8801580978353?text=অ্যাকুরিয়াম%20ট্যাংক%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার করুন</a>
       </div>
+    </div>
 
-      <!-- Aquarium Tank -->
-      <div class="card product">
-        <div class="pic">
-          <img src="Picsart_26-10-13_11-34-44-299.png" alt="Aquarium Tank">
-        </div>
-        <div class="info">
-          <h3>অ্যাকুরিয়াম ট্যাংক</h3>
-          <p>সাইজ: 9 × 6 × 9</p>
-          <div class="price">দাম: ৳৪৫০</div>
-          <p class="offer">🎁 সাথে এক জোড়া মাছ ফ্রি!</p>
-          <a class="btn" href="https://wa.me/8801580978353?text=অ্যাকুরিয়াম%20ট্যাংক%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার করুন</a>
-        </div>
+    <div class="card product">
+      <div class="pic" style="font-size:4rem">🫧</div>
+      <div class="info">
+        <h3>ফিল্টার ও এয়ার পাম্প</h3><p class="small">পানি পরিষ্কার ও অক্সিজেন সরবরাহের সরঞ্জাম।</p>
+        <div class="price">দাম জানতে মেসেজ দিন</div>
+        <a class="btn" href="https://wa.me/8801580978353?text=ফিল্টার%20ও%20এয়ার%20পাম্পের%20দাম%20জানতে%20চাই" target="_blank" rel="noopener">দাম / অর্ডার</a>
       </div>
+    </div>
 
+    <div class="card product">
+      <div class="pic"><img src="1841794517318883%20(1).jpg" alt="Aquarium Air Pump"></div>
+      <div class="info">
+        <h3>Aquarium Air Pump</h3><p>Model: AP 208 / AP 226</p>
+        <div class="price">দাম: ৳২৮০</div><p class="limited">⚠️ স্টক সীমিত</p>
+        <a class="btn" href="https://wa.me/8801580978353?text=Aquarium%20Air%20Pump%20অর্ডার%20করতে%20চাই" target="_blank" rel="noopener">অর্ডার করুন</a>
       </div>
-<div class="card product">
-  <div class="pic">
-    <img
-      src="1841794517318883%20(1).jpg"
-      alt="Aqurim Air Pump"
-      style="width:100%; height:200px; object-fit:contain;"
-    >
-  </div>
+    </div>
 
-  <div class="info">
-    <h3>Aqurim Air Pump</h3>
-    <p>Model: AP 208 / AP 226</p>
-    <div class="price">দাম: ৳২৮০</div>
+    <div class="card product">
+      <div class="pic"><img src="1000120206%20(1).jpg" alt="Blue Polar Parrot"></div>
+      <div class="info">
+        <h3>Blue Polar Parrot</h3><p class="small">শৌখিন অ্যাকুরিয়াম মাছ</p>
+        <div class="price">দাম: ৳২০০–৳৬০০ প্রতি জোড়া</div>
+        <p class="limited">⚠️ স্টক সীমিত</p>
+        <a class="btn" href="https://wa.me/8801580978353?text=Blue%20Polar%20Parrot%20মাছের%20দাম%20ও%20স্টক%20জানতে%20চাই" target="_blank" rel="noopener">দাম / অর্ডার</a>
+      </div>
+    </div>
 
-    <p style="color:#ff7676; font-weight:bold;">
-      ⚠️ স্টক সীমিত
-    </p>
+    <div class="card product">
+      <div class="pic" style="font-size:4rem">💡</div>
+      <div class="info">
+        <h3>লাইট ও এক্সেসরিজ</h3><p class="small">লাইট, এয়ার স্টোন ও অন্যান্য সামগ্রী।</p>
+        <div class="price">দাম জানতে মেসেজ দিন</div>
+        <a class="btn" href="https://wa.me/8801580978353?text=অ্যাকুরিয়াম%20এক্সেসরিজের%20দাম%20জানতে%20চাই" target="_blank" rel="noopener">দাম / অর্ডার</a>
+      </div>
+    </div>
 
-    <a
-      class="btn"
-      href="https://wa.me/8801580978353?text=Aqurim%20Air%20Pump%20অর্ডার%20করতে%20চাই"
-      target="_blank"
-      rel="noopener"
-    >অর্ডার করুন</a>
   </div>
 </div>
-      <!-- Blue Polar Parrot -->
-      <div class="card product">
-        <div class="pic">
-          <img src="1000120206 (1).jpg" alt="Blue Polar Parrot">
-        </div>
-        <div class="info">
-          <h3>Blue Polar Parrot</h3>
-          <p class="small">শৌখিন অ্যাকুরিয়াম মাছ</p>
-          <div class="price">দাম: ৳২০০–৳৬০০ প্রতি জোড়া</div>
-          <p class="limited">⚠️ স্টক সীমিত</p>
-          <a class="btn"
-             href="https://wa.me/8801580978353?text=Blue%20Polar%20Parrot%20মাছের%20দাম%20ও%20স্টক%20জানতে%20চাই"
-             target="_blank" rel="noopener">দাম / অর্ডার</a>
-        </div>
-      </div>
-      <!-- Accessories -->
-      <div class="card product">
-        <div class="pic" style="font-size:4rem">💡</div>
-        <div class="info">
-          <h3>লাইট ও এক্সেসরিজ</h3>
-          <p class="small">লাইট, এয়ার স্টোন ও অন্যান্য সামগ্রী।</p>
-          <div class="price">দাম জানতে মেসেজ দিন</div>
-          <a class="btn" href="https://wa.me/8801580978353?text=অ্যাকুরিয়াম%20এক্সেসরিজের%20দাম%20জানতে%20চাই" target="_blank" rel="noopener">দাম / অর্ডার</a>
-        </div>
-      </div>
+</section>
 
+<!-- ভিডিও যোগ করতে নিচের videos তালিকা সম্পাদনা করুন -->
+<section id="videos">
+  <div class="wrap">
+    <div class="head">
+      <h2>🎬 আমাদের ভিডিও</h2>
+      <p>YouTube, TikTok ও Facebook-এর ভিডিও দেখুন।</p>
     </div>
+    <div id="videoList" class="video-list"></div>
   </div>
 </section>
 
 <section id="delivery">
   <div class="wrap">
-    <div class="head">
-      <h2>ডেলিভারি নীতিমালা</h2>
-      <p>সারা বাংলাদেশে অর্ডারের জন্য যোগাযোগ করুন।</p>
-    </div>
-
+    <div class="head"><h2>ডেলিভারি নীতিমালা</h2><p>সারা বাংলাদেশে অর্ডারের জন্য যোগাযোগ করুন।</p></div>
     <div class="twocol">
       <div class="policy">
         <h3>📦 সরঞ্জাম ও খাবার</h3>
@@ -631,7 +318,6 @@ footer {
           <li>পণ্যের স্টক নিশ্চিত করে অর্ডার কনফার্ম করা হবে।</li>
         </ul>
       </div>
-
       <div class="policy">
         <h3>🐠 জীবন্ত মাছ</h3>
         <ul>
@@ -646,27 +332,19 @@ footer {
 
 <section id="contact">
   <div class="wrap">
-    <div class="head">
-      <h2>যোগাযোগ ও অর্ডার</h2>
-      <p>পণ্যের দাম, স্টক ও ডেলিভারি সম্পর্কে জানতে মেসেজ দিন।</p>
-    </div>
-
+    <div class="head"><h2>যোগাযোগ ও অর্ডার</h2><p>পণ্যের দাম, স্টক ও ডেলিভারি সম্পর্কে জানতে মেসেজ দিন।</p></div>
     <div class="twocol">
       <div class="card">
-        <h3>💬 WhatsApp</h3>
-        <p class="small">01580-978353</p>
+        <h3>💬 WhatsApp</h3><p class="small">01580-978353</p>
         <a class="btn" href="https://wa.me/8801580978353" target="_blank" rel="noopener">WhatsApp-এ মেসেজ দিন</a>
       </div>
-
       <div class="card">
-        <h3>📘 Facebook</h3>
-        <p class="small">নতুন পণ্য ও আপডেটের জন্য আমাদের পেজ দেখুন।</p>
+        <h3>📘 Facebook</h3><p class="small">নতুন পণ্য ও আপডেটের জন্য আমাদের পেজ দেখুন।</p>
         <a class="btn ghost" href="https://www.facebook.com/share/1JxdD2keqw/" target="_blank" rel="noopener">Facebook Page খুলুন</a>
       </div>
     </div>
   </div>
 </section>
-
 </main>
 
 <footer>
@@ -679,15 +357,119 @@ footer {
 <section class="social">
   <h2>Follow Hobby by Siam</h2>
   <p>আমাদের সঙ্গে যুক্ত থাকুন</p>
-
-  <a class="youtube" href="https://youtube.com/@hobbybysiam" target="_blank" rel="noopener">
-    ▶ YouTube
-  </a>
-
-  <a class="tiktok" href="https://www.tiktok.com/@hobby_by_siam" target="_blank" rel="noopener">
-    ♪ TikTok
-  </a>
+  <a class="youtube" href="https://youtube.com/@hobbybysiam" target="_blank" rel="noopener">▶ YouTube</a>
+  <a class="tiktok" href="https://www.tiktok.com/@hobby_by_siam" target="_blank" rel="noopener">♪ TikTok</a>
+  <a class="facebook" href="https://www.facebook.com/share/1JxdD2keqw/" target="_blank" rel="noopener">Facebook</a>
 </section>
+
+<script>
+/*
+  নতুন ভিডিও যোগ করার নিয়ম:
+  title = ভিডিওর নাম
+  url = ভিডিওর সম্পূর্ণ লিংক
+
+  YouTube: https://www.youtube.com/watch?v=VIDEO_ID
+  TikTok: https://www.tiktok.com/@username/video/VIDEO_ID
+  Facebook: ভিডিও পোস্ট খুলে Share/Copy link দিয়ে পাওয়া লিংক
+
+  উদাহরণগুলো পরিবর্তন করে নিজের ভিডিওর লিংক বসান।
+*/
+const videos = [
+  // নিজের ভিডিও যোগ করতে নিচের // সরিয়ে উদাহরণটি ব্যবহার করুন:
+  // { title: "আমার নতুন YouTube ভিডিও", url: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID" },
+  // { title: "আমার TikTok ভিডিও", url: "https://www.tiktok.com/@hobby_by_siam/video/YOUR_VIDEO_ID" },
+  // { title: "আমার Facebook ভিডিও", url: "https://www.facebook.com/আপনার-ভিডিও-লিংক" }
+];
+
+function getVideoInfo(rawUrl) {
+  try {
+    const u = new URL(rawUrl);
+    const host = u.hostname.toLowerCase().replace(/^www\./, "");
+
+    if (host === "youtu.be") {
+      return { type: "youtube", id: u.pathname.split("/").filter(Boolean)[0] };
+    }
+
+    if (host === "youtube.com" || host.endsWith(".youtube.com")) {
+      if (u.pathname === "/watch") {
+        return { type: "youtube", id: u.searchParams.get("v") };
+      }
+      const p = u.pathname.split("/").filter(Boolean);
+      if (["embed", "shorts", "live"].includes(p[0])) {
+        return { type: "youtube", id: p[1] };
+      }
+    }
+
+    if (host === "tiktok.com" || host.endsWith(".tiktok.com")) {
+      const m = u.pathname.match(/\/video\/(\d+)/);
+      if (m) return { type: "tiktok", id: m[1] };
+    }
+
+    if (host === "facebook.com" || host.endsWith(".facebook.com") || host === "fb.watch") {
+      return { type: "facebook", url: rawUrl };
+    }
+  } catch (e) {}
+  return null;
+}
+
+function addVideo(video) {
+  const card = document.createElement("article");
+  card.className = "video-card";
+
+  const title = document.createElement("h3");
+  title.textContent = video.title || "আমাদের ভিডিও";
+
+  const frame = document.createElement("div");
+  frame.className = "video-frame";
+
+  const info = getVideoInfo(video.url || "");
+  let embedUrl = "";
+
+  if (info && info.type === "youtube" && info.id) {
+    embedUrl = "https://www.youtube-nocookie.com/embed/" + encodeURIComponent(info.id);
+  } else if (info && info.type === "tiktok") {
+    embedUrl = "https://www.tiktok.com/embed/v2/" + encodeURIComponent(info.id);
+  } else if (info && info.type === "facebook") {
+    embedUrl = "https://www.facebook.com/plugins/video.php?href=" +
+      encodeURIComponent(info.url) + "&show_text=false";
+  }
+
+  if (embedUrl) {
+    const iframe = document.createElement("iframe");
+    iframe.src = embedUrl;
+    iframe.title = video.title || "Hobby by Siam video";
+    iframe.loading = "lazy";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.allowFullscreen = true;
+    frame.appendChild(iframe);
+  } else {
+    const msg = document.createElement("div");
+    msg.className = "video-error";
+    msg.textContent = "ভিডিওর লিংক সঠিকভাবে যোগ করুন।";
+    frame.appendChild(msg);
+  }
+
+  const link = document.createElement("a");
+  link.className = "btn";
+  link.href = video.url || "#";
+  link.target = "_blank";
+  link.rel = "noopener";
+  link.textContent = "মূল ভিডিও দেখুন";
+
+  card.append(title, frame, link);
+  document.getElementById("videoList").appendChild(card);
+}
+
+videos.forEach(addVideo);
+
+if (videos.length === 0) {
+  const list = document.getElementById("videoList");
+  const msg = document.createElement("div");
+  msg.className = "card";
+  msg.textContent = "এখানে আপনার ভিডিও দেখা যাবে। ভিডিও যোগ করতে HTML-এর videos তালিকায় ভিডিওর নাম ও লিংক বসান।";
+  list.appendChild(msg);
+}
+</script>
 
 </body>
 </html>
